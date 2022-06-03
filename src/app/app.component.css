@@ -1,0 +1,47 @@
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+  justify-content: space-around;
+  padding: 5px 0;
+}
+
+.toolbar div {
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbar div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h1, h3 {
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 12px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #1976d2;
+  color: white;
+  height: 50px;
+  font-weight: 600;
+}

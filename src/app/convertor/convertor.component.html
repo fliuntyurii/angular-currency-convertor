@@ -1,0 +1,45 @@
+<div class="content" role="main">
+    <h2>Конвертуйте без обмежень<br>та комісії</h2>
+    <main>
+      <div>
+        <h4>Віддаєте:</h4>
+        <div>
+          <input 
+            [value]="inputCurrent"
+            #inputValue 
+            (keyup)="setInputValue(inputValue)"
+            (change)="setInputValue(inputValue)" 
+            type="number" 
+            name="input"
+            min="0"
+            placeholder="Введіть суму"
+          >
+          <select #input (change)="setCurrency(input)" name="input">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="UAH">UAH</option>
+          </select>
+        </div>
+      </div>
+  
+      <div>
+        <h4>Отримуєте:</h4>
+        <div>
+          <input
+            [value]="outputCurrent" 
+            #outputValue
+            (keyup)="setOutputValue(outputValue)"
+            (change)="setOutputValue(outputValue)" 
+            type="number" 
+            name="output" 
+            min="0"
+          >
+          <select #output (change)="setExchanged(output)" name="output">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="UAH">UAH</option>
+          </select>
+        </div>
+      </div>
+    </main>
+</div>
